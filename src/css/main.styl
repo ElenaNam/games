@@ -1,0 +1,30 @@
+.main
+	background: pink
+	display flex
+	flex-grow: 1
+
+.cards
+	&__inner
+		max-width: 700px
+		margin 0 auto
+		display grid
+		grid-template-columns: repeat(4, 1fr)
+		grid-template-rows: repeat(4, 1fr)
+		gap 20px
+
+.card
+	position relative
+	border 1px solid
+	min-height: 150px
+
+	border-radius 5px
+
+	&__front, &__back
+		height: 100%
+		width 100%
+
+	&__front
+		background: #FF6E40
+	&__back
+		position absolute
+		background: #9FA8DA
